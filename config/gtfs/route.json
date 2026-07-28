@@ -11,6 +11,10 @@
             "route_id": 15000
         }
     ],
+    "route_colors_ignored": [
+        "CC780D"
+    ],
+    "route_colors_ignored_comment": "Ignore the orange route color from the GTFS feed, since it is not the correct color (should be same as agency color).",
     "default_route_long_name_enabled": true,
     "direction_finder_enabled": true,
     "trip_headsign_remove_via": true,
