@@ -1,9 +1,25 @@
 {
     "default_route_id_enabled": true,
     "use_route_short_name_for_route_id": true,
+    "route_short_name_to_route_id_configs": [
+        {
+            "route_short_name": "Blue",
+            "route_id": 2000
+        },
+        {
+            "route_short_name": "Orange",
+            "route_id": 15000
+        }
+    ],
     "default_route_long_name_enabled": true,
     "direction_finder_enabled": true,
     "trip_headsign_remove_via": true,
-    "trip_headsign_cleaners": [],
+    "trip_headsign_cleaners": [
+        {
+            "regex": "\\s+route$",
+            "ignore_case": true,
+            "comment": "Remove 'route' from the end of trip headsigns"
+        }
+    ],
     "stop_name_cleaners": []
 }
