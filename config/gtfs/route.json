@@ -16,7 +16,7 @@
     "trip_headsign_remove_via": true,
     "trip_headsign_cleaners": [
         {
-            "regex": "\\s+route$",
+            "regex": "^(Blue|Orange)\\s+route$",
             "ignore_case": true,
             "comment": "Remove 'route' from the end of trip headsigns"
         }
